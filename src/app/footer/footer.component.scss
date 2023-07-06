@@ -1,0 +1,51 @@
+/* Footer container */
+.footer-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Footer content */
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Navigation */
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Navigation links */
+  .navigation a {
+    display: block;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navigation a:hover {
+    background-color: #555;
+  }
+  
+  /* Add some spacing between the navigation links */
+  .navigation a:not(:last-child) {
+    margin-right: 20px;
+  }
+  
+  /* Add some margin to the bottom of the page to prevent content from being hidden behind the footer */
+  main {
+    margin-bottom: 80px;
+  }
