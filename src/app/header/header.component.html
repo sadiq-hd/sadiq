@@ -1,10 +1,18 @@
+
+
+
 <div class="header-container">
-  <a href="#" class="logo">SHUTERCART</a>
-  <nav class="navigation">
-    <a routerLink="/">Home</a>
-    <a routerLink="/lens">Lens</a>
+  <mat-toolbar color="primary">
+  <a href="/Home" routerlinkactive="active" href="/home"  class="logo">SHUTERCART</a>
+<button mat-icon-button (click)="toggleMenu()" aria-label="Toggle menu">
+    <mat-icon>menu</mat-icon> </button>
+  <nav [class.show]="isMenuOpen" class="navigation">
+    <a  routerlink="/Home" routerlinkactive="active" href="/home" class="active">Home</a>
+    <a  routerlink="/lens" routerlinkactive="active" href="/lens" class="active">Lens</a>
     <a routerLink="/camera">Camera</a>
     <a routerLink="/tools">Tools</a>
-    <a href="#">Login OR Rigister</a>
   </nav>
+  </mat-toolbar>
+<a href="/"routerlinkactive="active" href="/" class="log-cart" >Login OR Rigister</a>
+
 </div>

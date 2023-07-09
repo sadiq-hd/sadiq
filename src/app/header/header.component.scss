@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  padding: 10px;
   background-color: #333;
   color: #fff;
 }
@@ -28,9 +28,23 @@
   padding: 10px 20px;
   font-size: 16px;
   font-weight: bold;
+  color: #e7c500;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  
+}
+.log-cart{
+  font-size: 17px;
+  font-weight: bold;
   color: #fff;
   text-decoration: none;
   transition: background-color 0.3s ease;
+
+}
+
+.log-cart a:hover{
+  background-color: #555;
+
 }
 
 .navigation a:hover {
@@ -40,4 +54,48 @@
 /* Add some spacing between the navigation links */
 .navigation a:not(:last-child) {
   margin-right: 20px;
+}
+mat-toolbar nav {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 64px;
+  right: 0;
+  width: 100%;
+  background-color: #fff;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  max-height: 0;
+}
+
+mat-toolbar nav.show {
+  max-height: 500px;
+}
+
+@media screen and (min-width: 768px) {
+  mat-toolbar nav {
+    position: static;
+    flex-direction: row;
+    max-height: none;
+    background-color: transparent;
+  }
+
+  mat-toolbar nav a {
+    margin-right: 16px;
+    margin-right: auto;
+
+  }
+  .mat-icon {
+    display: block;
+
+  }
+  
+  @media screen and (min-width: 768px) {
+    /* Styles for larger screens */
+    .mat-icon {
+      display: none;
+      
+    }
+
+  }
 }
