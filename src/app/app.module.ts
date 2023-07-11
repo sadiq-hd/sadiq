@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
-
 import { BrowserModule } from '@angular/platform-browser';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
@@ -12,7 +11,8 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { LensComponent } from './lens/lens.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { FormsModule } from '@angular/forms';
+import { LoginComponent } from './login/login.component'; // Import the FormsModule
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +21,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FooterComponent,
     HomeComponent,
     LensComponent,
-   
+    LoginComponent,
+
+  
   ],
   imports: [
     BrowserModule,
@@ -29,7 +31,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    BrowserModule,
+    FormsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

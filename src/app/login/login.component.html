@@ -1,0 +1,20 @@
+<div id="login-container" class="row vw-100 vh-100">
+    <div class="card mx-auto my-auto col-md-5 py-md-3">
+      <div id="page-title">login</div>
+      <div class="body py-md-3">
+        <form #f='ngForm' (submit)="login(f.value)" class="mt-3 py-md-3">
+          <div class="dialog-field">
+            <label class="dialog-field-label">Phone Number</label>
+            <input ngModel #Mobile='ngModel' required name="Mobile" type="text" class="dialog-field-input w-100">
+          </div>
+          <div class="dialog-field mb-3">
+            <label class="dialog-field-label">Password</label>
+            <input ngModel #Password='ngModel' required name="Password" type="password" class=" dialog-field-input w-100">
+          </div>
+          <input type="submit" value="Login" [disabled]="!Mobile.valid || !Password.valid"
+            class="btn btn-primary barri-btn barri-btn-primary-width mx-auto px-5 d-block my-3">
+        </form>
+      </div>
+    </div>
+  </div>
+  

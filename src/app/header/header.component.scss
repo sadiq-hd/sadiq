@@ -89,6 +89,10 @@ mat-toolbar nav.show {
     display: block;
 
   }
+  .mat-toolbar.mat-primary {
+    background: #333333;
+    color: #fff;
+}
   
   @media screen and (min-width: 768px) {
     /* Styles for larger screens */
