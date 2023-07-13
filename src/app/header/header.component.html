@@ -7,12 +7,14 @@
 <button mat-icon-button (click)="toggleMenu()" aria-label="Toggle menu">
     <mat-icon>menu</mat-icon> </button>
   <nav [class.show]="isMenuOpen" class="navigation">
-    <a  routerlink="/Home" routerlinkactive="active" href="/home" class="active">Home</a>
-    <a  routerlink="/lens" routerlinkactive="active" href="/lens" class="active">Lens</a>
+    <a routerlink="/Home" routerlinkactive="active" href="/home" class="active">Home</a>
+    <a routerlink="/lens" routerlinkactive="active" href="/lens" class="active">Lens</a>
     <a routerLink="/camera">Camera</a>
     <a routerLink="/tools">Tools</a>
-  </nav>
-  </mat-toolbar>
-<a routerlink="/login" routerlinkactive="active" href="/Login" class="active" class="log-cart">Login </a>
 
+  </nav> 
+     <a routerlink="/login" routerlinkactive="active" href="/login" class="active" class="log-cart">Login </a>
+
+  </mat-toolbar>
+   
 </div>

@@ -1,0 +1,44 @@
+#login-container{
+  background-color: #ffffff49;
+  
+}
+#page-title{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 32px; 
+    border: 60px;
+  }
+  .btn-primary{
+    background-color: #00158b;
+    border-color: #2b2b2b8c;
+   
+  }
+  @media screen and (max-width: 767px) {
+  .card {
+    max-width: 300px;
+
+    #page-title {
+      font-size: 24px;
+    }
+
+    .body {
+      form {
+        .dialog-field {
+          label {
+            font-size: 14px;
+          }
+
+          input {
+            font-size: 14px;
+          }
+        }
+
+        input[type="submit"] {
+          font-size: 16px;
+          padding: 10px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.registration-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  
+    .card {
+      max-width: 500px;
+      width: 100%;
+      padding: 1rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  
+      .card-header {
+        background-color: #f4f4f4;
+        padding: 0.5rem;
+        text-align: center;
+      }
+  
+      .card-title {
+        margin-bottom: 0;
+      }
+  
+      .form-group {
+        margin-bottom: 1rem;
+  
+        label {
+          display: block;
+          margin-bottom: 0.5rem;
+        }
+  
+        input {
+          width: 100%;
+          border: 1px solid #ccc;
+          border-radius: 0.25rem;
+          padding: 0.5rem;
+        }
+      }
+  
+      button[type="submit"] {
+        display: block;
+        width: 100%;
+        margin-top: 1rem;
+      }
+    }
+  }

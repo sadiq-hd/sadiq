@@ -78,6 +78,8 @@ mat-toolbar nav.show {
     flex-direction: row;
     max-height: none;
     background-color: transparent;
+    background: #333333;
+    color: #fff;
   }
 
   mat-toolbar nav a {
