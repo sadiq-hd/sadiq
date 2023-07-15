@@ -1,0 +1,14 @@
+<h2>Order Tracking Information</h2>
+<p>Your order is currently being processed and will be shipped soon. We'll send you an email with tracking information as soon as it's available.</p> 
+
+<section class="cancel-orders">
+<section class="order-cancellation">
+    <h2>Cancel Order</h2>
+    <form (ngSubmit)="onCancelOrder()">
+      <div class="form-group">
+        <label for="order-id">Order ID:</label>
+        <input type="text" id="order-id" name="order-id" required [(ngModel)]="orderId">
+      </div>
+      <button type="submit">Cancel Order</button>
+    </form>
+  </section>  </section>

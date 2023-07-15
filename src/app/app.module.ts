@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -19,6 +20,11 @@ import { ProductsComponent } from './Admin-datiles/products/products.component';
 import { OrdersComponent } from './Admin-datiles/orders/orders.component';
 import { UsersComponent } from './Admin-datiles/users/users.component';
 import { RouterModule, Routes } from '@angular/router';
+import { CartComponent } from './cart/cart.component';
+import { ForgotPasswordComponent } from './login-signup/forgotpassword/forgot-password.component';
+import { CustomerAccountComponent } from './account-information/customer-account/customer-account.component';
+import { EditInformationComponent } from './account-information/edit-information/edit-information.component';
+import { OrderInformationComponent } from './account-information/order-information/order-information.component';
 
 const routes: Routes = [
   {
@@ -63,6 +69,11 @@ const routes: Routes = [
     ProductsComponent,
     OrdersComponent,
     UsersComponent,
+    CartComponent,
+    ForgotPasswordComponent,
+    CustomerAccountComponent,
+    EditInformationComponent,
+    OrderInformationComponent,
     
     
 
@@ -77,7 +88,9 @@ const routes: Routes = [
     BrowserAnimationsModule,
     BrowserModule,
     FormsModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    HttpClientModule
+
     
   ],
   providers: [],

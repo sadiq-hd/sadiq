@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { User } from './user.model';
+
 
 @Component({
   selector: 'app-registration',
@@ -8,11 +8,17 @@ import { User } from './user.model';
   styleUrls: ['./registration.component.scss']
 })
 export class RegistrationComponent {
-  user: User = new User();
+  user = {
+    fname: '',
+    lname: '',
+    phone: '',
+    email: '',
+    address: '',
+    password: '',
+    confirmPassword: ''
+  };
 
-  constructor() {}
-
-  onSubmit() {
-    // Your registration logic here
+  onSubmit(form: NgForm) {
+    // Handle form submission
   }
 }

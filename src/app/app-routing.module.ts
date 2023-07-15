@@ -7,6 +7,8 @@ import { RegistrationComponent } from './login-signup/registration/registration.
 import { OrdersComponent } from './Admin-datiles/orders/orders.component';
 import { UsersComponent } from './Admin-datiles/users/users.component';
 import { ProductsComponent } from './Admin-datiles/products/products.component';
+import { ForgotPasswordComponent } from './login-signup/forgotpassword/forgot-password.component';
+
 
 const routes: Routes = [
 { path: 'home', component: HomeComponent },
@@ -17,7 +19,7 @@ const routes: Routes = [
 { path: 'users', component: UsersComponent },
 { path: 'orders', component: OrdersComponent },
 { path: 'products', component: ProductsComponent },
-
+{ path: 'forgot-password', component: ForgotPasswordComponent },
  ];
 
 @NgModule({
